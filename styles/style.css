@@ -138,7 +138,9 @@ hr{
      padding: 0 10px;
      border-radius: 15px;
  }
- /* @media query player list style */
+ /*-----------------------------------
+  @media query for player list style 
+  -------------------------------------*/
  @media (max-width:500px) {
     .container{
         width: 470px;
@@ -156,4 +158,21 @@ hr{
         align-items: center
     }
  }
- 
+ /*-----------------------------------
+  @media query for Top blog style 
+  -------------------------------------*/
+  @media (max-width:500px) {
+    .blogs{
+       
+        grid-template-columns: 400px;
+    }
+  }
+  /*---------------------------------------------------
+ @media query for Lates Course styles course-banner
+ --------------------------------------------------------*/
+ @media (max-width:500px) {
+    .courses{
+        grid-template-columns: 400px;
+        grid-row-gap: 25px;
+    }
+  }
