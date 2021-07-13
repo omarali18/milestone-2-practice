@@ -141,38 +141,27 @@ hr{
  /*-----------------------------------
   @media query for player list style 
   -------------------------------------*/
- @media (max-width:300px) {
+  @media only screen and (max-width:688px) {
     .container{
-        width: 250px;
-        background-color: white;
-        padding: 15px; 
-        margin-top: 10px;
-        border-radius: 5px;
+        width: 100%;
     }
-    .players{
-        grid-template-columns:250px;
+    .players, .blogs, .courses{
+        grid-template-columns:repeat(1, 1fr);
        
     }
-    .player{
+    .player, .blog{
         flex-direction: column;
-        align-items: center
     }
- }
- /*-----------------------------------
-  @media query for Top blog style 
-  -------------------------------------*/
-  @media (max-width:300px) {
-    .blogs{
-       
-        grid-template-columns: 250px;
-    }
-  }
-  /*---------------------------------------------------
- @media query for Lates Course styles course-banner
- --------------------------------------------------------*/
- @media (max-width:300px) {
     .courses{
-        grid-template-columns: 250px;
-        grid-row-gap: 25px;
+        grid-row-gap: 20px;
     }
+  .course{
+      margin-left: 20px;
+      border-radius: 35px;
+  }
+  .courses .course-banner img{
+    width: 100%;
+    
+    height: 300px;
+ }
   }
