@@ -141,6 +141,11 @@ hr{
  /*-----------------------------------
   @media query for player list style 
   -------------------------------------*/
+
+  /*-------------------------------------
+         @media query for phone 
+-----------------------------------------*/
+
   @media only screen and (max-width:688px) {
     .container{
         width: 100%;
@@ -164,4 +169,28 @@ hr{
     
     height: 300px;
  }
-  }
+}
+
+ /*-------------------------------------
+         @media query for ipad 
+-----------------------------------------*/
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns:repeat(2, 1fr);
+    }
+    .blogs {
+        grid-template-columns:repeat(1, 1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
+    .courses{
+        grid-row-gap: 20px;
+    }
+    .course{
+        margin-left: 20px;
+    }
+}
