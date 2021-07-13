@@ -141,9 +141,9 @@ hr{
  /*-----------------------------------
   @media query for player list style 
   -------------------------------------*/
- @media (max-width:500px) {
+ @media (max-width:400px) {
     .container{
-        width: 470px;
+        width: 350px;
         background-color: white;
         padding: 30px; 
         margin-top: 41px;
@@ -161,18 +161,18 @@ hr{
  /*-----------------------------------
   @media query for Top blog style 
   -------------------------------------*/
-  @media (max-width:500px) {
+  @media (max-width:400px) {
     .blogs{
        
-        grid-template-columns: 400px;
+        grid-template-columns: 300px;
     }
   }
   /*---------------------------------------------------
  @media query for Lates Course styles course-banner
  --------------------------------------------------------*/
- @media (max-width:500px) {
+ @media (max-width:400px) {
     .courses{
-        grid-template-columns: 400px;
+        grid-template-columns: 300px;
         grid-row-gap: 25px;
     }
   }
